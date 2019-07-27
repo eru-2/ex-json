@@ -1,0 +1,85 @@
+:root {
+	--black: #000;
+	--white: #FFF;
+	--dark-grey: #494949;
+	--light-grey: #7C7A7A;
+	--rose: #FF5D73;
+}
+
+html, head, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-radius: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#content {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+#left, #right {
+	min-height: 100%;
+}
+
+#right {
+	background: var(--black);
+}
+
+.wrapper {
+	display: table;
+	box-sizing: border-box;
+	padding: 5px;
+}
+
+.cat {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+#btn-generate {
+	color: #FFF;
+	background-color: var(--light-grey);
+	padding: 5px;
+}
+
+#btn-copy:hover, #btn-generate:hover {
+	background-color: var(--dark-grey);
+	cursor: pointer;
+}
+
+.input-text, .input-select {
+	display: flex;
+	flex-direction: column;
+}
+
+#right {
+	color: var(--white);
+}
+
+#output {
+	background-color: var(--black);
+	color: var(--white);
+	border: 0;
+	font-size: 1.5em;
+	font-family: monospace;
+	height: 95%;
+}
+
+.col-1 { width: calc(100% / 12 * 1); }
+.col-2 { width: calc(100% / 12 * 2); }
+.col-3 { width: calc(100% / 12 * 3); }
+.col-4 { width: calc(100% / 12 * 4); }
+.col-5 { width: calc(100% / 12 * 5); }
+.col-6 { width: calc(100% / 12 * 6); }
+.col-7 { width: calc(100% / 12 * 7); }
+.col-8 { width: calc(100% / 12 * 8); }
+.col-9 { width: calc(100% / 12 * 9); }
+.col-10 { width:  calc(100% / 12 * 10); }
+.col-11 { width:  calc(100% / 12 * 11); }
+.col-12 { width:  calc(100% / 12 * 12); }

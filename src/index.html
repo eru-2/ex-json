@@ -1,0 +1,116 @@
+<html>
+<meta charset="utf-8">
+<head>
+	<script type="text/javascript" src="dep/jquery-3.4.1/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="dep/select2-4.0.8/select2.full.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="dep/select2-4.0.8/select2.min.css"/>
+
+	<script type="text/javascript" src="js/ex-data.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+
+	<title>ex-json</title>
+</head>
+<body>
+	<div id="content" class="col-12">
+		<div id="left" class="col-6">
+			<div class="cat col-12">
+
+				<label for="gid">Gallery ID</label>
+				<div class="input-text">
+					<input id="gid" type="text">
+				</div>
+
+				<label for="pid">Parent ID</label>
+				<div class="input-text">
+					<input id="pid" type="text">
+				</div>
+
+				<label for="category">Category</label>
+				<div class="input-select">
+					<select id="category"></select>
+				</div>				
+
+				<label for="title">Title</label>
+				<div class="input-text">
+					<input id="title" type="text" placeholder="Ore no Jimiko ni Nama de">
+				</div>
+
+				<label for="title-o">Original Title [fill this to the best of your abilities]</label>
+				<div class="input-text">
+					<input id="title-o" type="text" placeholder="(C79) [Number2 (たくじ)] 俺の幼馴染にナマで(ry (俺の妹がこんなに可愛いわけがない)">
+				</div>
+
+				<label for="parody">Group</label>
+				<div class="input-select">
+					<select id="group" multiple="multiple"></select>
+				</div>
+
+				<label for="group-t">Group (not listed) [delimited by ;]</label>
+				<div class="input-text">
+					<input id="group-t" type="text"></input>
+				</div>
+
+				<label for="artist">Artist</label>
+				<div class="input-select">
+					<select id="artist" multiple="multiple"></select>
+				</div>
+
+				<label for="parody-t">Artist (not listed) [delimited by ;]</label>
+				<div class="input-text">
+					<input id="artist-t" type="text"></input>
+				</div>
+
+				<label for="language">Language</label>
+				<div class="input-select">
+					<select id="language"></select>
+				</div>
+
+				<label for="tag-f">Tags (F)</label>
+				<div class="input-select">
+					<select id="tag-f" multiple="multiple"></select>
+				</div>
+
+				<label for="tag-m">Tags (M)</label>
+				<div class="input-select">
+					<select id="tag-m" multiple="multiple"></select>
+				</div>
+
+				<label for="tag-misc">Tags (misc)</label>
+				<div class="input-select">
+					<select id="tag-misc" multiple="multiple"></select>
+				</div>				
+
+				<label for="char">Characters</label>
+				<div class="input-select">
+					<select id="char" multiple="multiple"></select>
+				</div>
+
+				<label for="char-t">Characters (not listed) [delimited by ;]</label>
+				<div class="input-text">
+					<input id="char-t" type="text"></input>
+				</div>
+
+				<label for="parody">Parody</label>
+				<div class="input-select">
+					<select id="parody" multiple="multiple"></select>
+				</div>
+
+				<label for="parody-t">Parody (not listed) [delimited by ;]</label>
+				<div class="input-text">
+					<input id="parody-t" type="text"></input>
+				</div>
+
+				<div class="wrapper">
+					<div id="btn-generate">Generate JSON</div>
+				</div>
+			</div>
+		</div>
+		<div id="right" class="col-6">
+			<div class="wrapper">
+				<div id="btn-copy">Copy to clipboard</div>
+			</div>
+			<textarea id="output" readonly="readonly" class="col-12"></textarea>
+		</div>
+	</div>
+</body>
